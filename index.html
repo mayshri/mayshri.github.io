@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>My Personal Portfolio</title>
+  <meta name="description" content="This is my personal portfolio">
+  <meta name="keywords" content="portfolio, projects, skills">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <h1>Welcome to my world</h1>
+    <h1>Welcome to My Portfolio</h1>
   </header>
 
   <nav>
@@ -20,9 +23,8 @@
 
   <section id="resume">
     <h2>Resume</h2>
-    <p>Education: McGill University</p>
-    <p>Degree: Master's of Science in Computer Science</p>
-    <p>Skills: </p>
+    <p>Education: XYZ University</p>
+    <p>Skills: Programming, Web Development</p>
   </section>
 
   <section id="projects">
@@ -37,13 +39,20 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+    <form id="contact-form" action="https://formspree.io/f/youremail" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText">Some text in the Modal..</p>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
